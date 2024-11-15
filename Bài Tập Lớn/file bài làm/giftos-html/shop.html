@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link href="css/shop.css" rel="stylesheet" />
+    <title>ÁI Nhã MILK</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/responsive.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="hero_area">
+        <header class="header_section">
+            <nav class="navbar navbar-expand-lg custom_nav-container ">
+                <a class="navbar-brand" href="index.html">
+                    <span>
+                        <img style="border-radius: 50px;" src="/file bài làm/giftos-html/images/logo.png" width="80px" alt="">
+          </span>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class=""></span>
+        </button>
+                <div class="collapse navbar-collapse innerpage_navbar" id="navbarSupportedContent">
+                    <img style="padding-left: 50px;" src="/file bài làm/giftos-html/images/logo.png" alt="" height="50px">
+                    <ul class="navbar-nav  ">
+                        <link href="css/shop.css" rel="stylesheet">
+                        <li class="nav-item "><a class="nav-link" href="index.html">Trang chủ <span class="sr-only">(current)</span></a></li>
+                        <li class="nav-item active"><a class="nav-link" href="CuaHang.html">Cửa Hàng</a></li>
+                        <li class="nav-item"><a class="nav-link" href="why.html">Tin Tức</a></li>
+                        <li class="nav-item"><a class="nav-link" href="testimonial.html">Giới Thiệu</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Liên Hệ</a></li>
+                    </ul>
+                    <div class="user_option" id="userOptions">
+                        <a href="login.html" onclick="openLoginForm()">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                            <span>Đăng Nhập</span>
+                        </a>
+                        <a href="register.html">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                            <span>Đăng Ký</span>
+                        </a>
+                    </div>
+                    <!-- nguoi dung -->
+                    <div class="user_option">
+                        <a href="checkout.html"><i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                            <span id="cart-count">0</span> Giỏ Hàng
+                        </a>
+                    </div>
+                    <form class="form-inline ">
+                        <button class="btn nav_search-btn" type="button" onclick="toggleSearch()">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
+
+                        <!-- Search Container -->
+                        <div class="search-container" id="searchContainer">
+                            <input type="text" class="search-input" placeholder="Tìm kiếm..." aria-label="Search">
+                            <button class="btn" onclick="searchFunction()">Tìm Kiếm</button>
+                        </div>
+                    </form>
+                </div>
+    </div>
+    </nav>
+    </header>
+    </div>
+    <section class="shop_section layout_padding">
+        <div class="container">
+            <div class="heading_container heading_center" style="color: brown;">
+                <h2>SẢN PHẨM CHO BÉ</h2>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="box">
+                        <a href="#">
+                            <div class="img-box">
+                                <img src="images/SP1.png" alt="Abbott Grow">
+                            </div>
+                            <div class="detail-box">
+                                <h6>Abbott Grow</h6>
+                                <h6>Giá <span>200,000đ</span></h6>
+                            </div>
+                            <button onclick="addToCart('Abbott Grow', 200000)">Thêm vào giỏ hàng</button>
+                        </a>
+                    </div>
+                </div>
+                <!-- sp2-->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="box">
+                        <a href="#">
+                            <div class="img-box">
+                                <img src="/file bài làm/giftos-html/images/SP2.png" alt="Pedia Sure">
+                            </div>
+                            <div class="detail-box">
+                                <h6>Pedia Sure</h6>
+                                <h6>Giá <span>300,000đ</span></h6>
+                            </div>
+                            <button onclick="addToCart('Pedia Sure', 300000)">Thêm vào giỏ hàng</button>
+                        </a>
+                    </div>
+                </div>
+                <!-- sp3 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="box">
+                        <a href="#">
+                            <div class="img-box">
+                                <img src="/file bài làm/giftos-html/images/SP3.png" alt="Grow Plus+">
+                            </div>
+                            <div class="detail-box">
+                                <h6>Grow Plus+</h6>
+                                <h6>Giá <span>550,000đ</span></h6>
+                            </div>
+                            <button onclick="addToCart('Grow Plus+', 550000)">Thêm vào giỏ hàng</button>
+                        </a>
+                    </div>
+                </div>
+                <!-- sp4 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="box">
+                        <a href="#">
+                            <div class="img-box">
+                                <img src="/file bài làm/giftos-html/images/SP4.png" alt="Similac">
+                            </div>
+                            <div class="detail-box">
+                                <h6>Similac</h6>
+                                <h6>Giá <span>450,000đ</span></h6>
+                            </div>
+                            <button onclick="addToCart('Similac', 450000)">Thêm vào giỏ hàng</button>
+                        </a>
+                    </div>
+                </div>
+                <!-- sp5 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="box">
+                        <a href="#">
+                            <div class="img-box">
+                                <img src="/file bài làm/giftos-html/images/SP9.png" alt="Colos">
+                            </div>
+                            <div class="detail-box">
+                                <h6>Colos</h6>
+                                <h6>Giá <span>950,000đ</span></h6>
+                            </div>
+                            <button onclick="addToCart('Colos', 950000)">Thêm vào giỏ hàng</button>
+                        </a>
+                    </div>
+                </div>
+                <!-- sp6 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="box">
+                        <a href="#">
+                            <div class="img-box">
+                                <img src="/file bài làm/giftos-html/images/SP6.png" alt="Efamil A+">
+                            </div>
+                            <div class="detail-box">
+                                <h6>Efamil A+</h6>
+                                <h6>Giá <span>700,000đ</span></h6>
+                            </div>
+                            <button onclick="addToCart('Efamil A+', 700000)">Thêm vào giỏ hàng</button>
+                        </a>
+                    </div>
+                </div>
+                <!-- sp7 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="box">
+                        <a href="#">
+                            <div class="img-box">
+                                <img src="/file bài làm/giftos-html/images/SP10.png" alt="Friso Gold Pro">
+                            </div>
+                            <div class="detail-box">
+                                <h6>Friso Gold Pro</h6>
+                                <h6>Giá <span>400,000đ</span></h6>
+                            </div>
+                            <button onclick="addToCart('Friso Gold Pro', 400000)">Thêm vào giỏ hàng</button>
+                        </a>
+                    </div>
+                </div>
+                <!-- sp8 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="box">
+                        <a href="#">
+                            <div class="img-box">
+                                <img src="/file bài làm/giftos-html/images/SP8.png" alt="Friso Gold">
+                            </div>
+                            <div class="detail-box">
+                                <h6>Friso Gold</h6>
+                                <h6>Giá <span>650,000đ</span></h6>
+                            </div>
+                            <button onclick="addToCart('Friso Gold', 650000)">Thêm vào giỏ hàng</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="box">
+                        <a href="#">
+                            <div class="img-box">
+                                <img src="images/SP1.png" alt="Abbott Grow">
+                            </div>
+                            <div class="detail-box">
+                                <h6>Abbott Grow</h6>
+                                <h6>Giá <span>200,000đ</span></h6>
+                            </div>
+                            <button onclick="addToCart('Abbott Grow', 200000)">Thêm vào giỏ hàng</button>
+                        </a>
+                    </div>
+                </div>
+                <!-- sp2-->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="box">
+                        <a href="#">
+                            <div class="img-box">
+                                <img src="/file bài làm/giftos-html/images/SP2.png" alt="Pedia Sure">
+                            </div>
+                            <div class="detail-box">
+                                <h6>Pedia Sure</h6>
+                                <h6>Giá <span>300,000đ</span></h6>
+                            </div>
+                            <button onclick="addToCart('Pedia Sure', 300000)">Thêm vào giỏ hàng</button>
+                        </a>
+                    </div>
+                </div>
+                <!-- sp3 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="box">
+                        <a href="#">
+                            <div class="img-box">
+                                <img src="/file bài làm/giftos-html/images/SP3.png" alt="Grow Plus+">
+                            </div>
+                            <div class="detail-box">
+                                <h6>Grow Plus+</h6>
+                                <h6>Giá <span>550,000đ</span></h6>
+                            </div>
+                            <button onclick="addToCart('Grow Plus+', 550000)">Thêm vào giỏ hàng</button>
+                        </a>
+                    </div>
+                </div>
+                <!-- sp4 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="box">
+                        <a href="#">
+                            <div class="img-box">
+                                <img src="/file bài làm/giftos-html/images/SP4.png" alt="Similac">
+                            </div>
+                            <div class="detail-box">
+                                <h6>Similac</h6>
+                                <h6>Giá <span>450,000đ</span></h6>
+                            </div>
+                            <button onclick="addToCart('Similac', 450000)">Thêm vào giỏ hàng</button>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- sp5 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="box">
+                        <a href="#">
+                            <div class="img-box">
+                                <img src="/file bài làm/giftos-html/images/SP9.png" alt="Colos">
+                            </div>
+                            <div class="detail-box">
+                                <h6>Colos</h6>
+                                <h6>Giá <span>950,000đ</span></h6>
+                            </div>
+                            <button onclick="addToCart('Colos', 950000)">Thêm vào giỏ hàng</button>
+                        </a>
+                    </div>
+                </div>
+                <!-- sp6 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="box">
+                        <a href="#">
+                            <div class="img-box">
+                                <img src="/file bài làm/giftos-html/images/SP6.png" alt="Efamil A+">
+                            </div>
+                            <div class="detail-box">
+                                <h6>Efamil A+</h6>
+                                <h6>Giá <span>700,000đ</span></h6>
+                            </div>
+                            <button onclick="addToCart('Efamil A+', 700000)">Thêm vào giỏ hàng</button>
+                        </a>
+                    </div>
+                </div>
+                <!-- sp7 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="box">
+                        <a href="#">
+                            <div class="img-box">
+                                <img src="/file bài làm/giftos-html/images/SP10.png" alt="Friso Gold Pro">
+                            </div>
+                            <div class="detail-box">
+                                <h6>Friso Gold Pro</h6>
+                                <h6>Giá <span>400,000đ</span></h6>
+                            </div>
+                            <button onclick="addToCart('Friso Gold Pro', 400000)">Thêm vào giỏ hàng</button>
+                        </a>
+                    </div>
+                </div>
+                <!-- sp8 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="box">
+                        <a href="#">
+                            <div class="img-box">
+                                <img src="/file bài làm/giftos-html/images/SP8.png" alt="Friso Gold">
+                            </div>
+                            <div class="detail-box">
+                                <h6>Friso Gold</h6>
+                                <h6>Giá <span>650,000đ</span></h6>
+                            </div>
+                            <button onclick="addToCart('Friso Gold', 650000)">Thêm vào giỏ hàng</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <img src="/file bài làm/giftos-html/images/quảng cáo 2.png" width="1600px" alt="">
+    <section class="shop_section layout_padding">
+        <div class="container">
+            <div class="heading_container heading_center" style="color: brown;">
+                <h2>SẢN PHẨM CHO MẸ BẦU</h2>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-2 col-lg-6">
+                    <div class="box">
+                        <a href="#">
+                            <div class="img-box">
+                                <img src="images/sp13.png" alt="Abbott Grow">
+                            </div>
+                            <div class="detail-box">
+                                <h6>Abbott Grow</h6>
+                                <h6>Giá <span>700,000đ</span></h6>
+                            </div>
+                            <button onclick="addToCart('Abbott Grow', 700000)">Thêm vào giỏ hàng</button>
+                        </a>
+                    </div>
+                </div>
+                <!-- sp3-->
+                <div class="col-sm-6 col-md-3 col-lg-6">
+                    <div class="box">
+                        <a href="#">
+                            <div class="img-box">
+                                <img src="/file bài làm/giftos-html/images/SP2.png" alt="Pedia Sure">
+                            </div>
+                            <div class="detail-box">
+                                <h6>Pedia Sure</h6>
+                                <h6>Giá <span>600,000đ</span></h6>
+                            </div>
+                            <button onclick="addToCart('Pedia Sure', 600000)">Thêm vào giỏ hàng</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-2 col-lg-6">
+                    <div class="box">
+                        <a href="#">
+                            <div class="img-box">
+                                <img src="images/SP4.png" alt="Abbott Grow">
+                            </div>
+                            <div class="detail-box">
+                                <h6>Abbott Grow</h6>
+                                <h6>Giá <span>700,000đ</span></h6>
+                            </div>
+                            <button onclick="addToCart('Abbott Grow', 700000)">Thêm vào giỏ hàng</button>
+                        </a>
+                    </div>
+                </div>
+                <!-- sp4-->
+                <div class="col-sm-6 col-md-3 col-lg-6">
+                    <div class="box">
+                        <a href="#">
+                            <div class="img-box">
+                                <img src="/file bài làm/giftos-html/images/SP12.png" alt="Pedia Sure">
+                            </div>
+                            <div class="detail-box">
+                                <h6>Pedia Sure</h6>
+                                <h6>Giá <span>600,000đ</span></h6>
+                            </div>
+                            <button onclick="addToCart('Pedia Sure', 600000)">Thêm vào giỏ hàng</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div style="color: brown; font-size: large; font-family: arial;" class="heading_container heading_center">
+        <h2>Chương Trình - Khuyến Mãi</h2>
+    </div>
+    <section class="saving_section ">
+        <div class="box " style="background-color: rgb(233, 41, 41);">
+            <div class="container-fluid ">
+                <div class="row ">
+                    <div class="col-lg-6 ">
+                        <div class="img-box ">
+                            <img style="padding-bottom: 20px;" src="/file bài làm/giftos-html/images/spkm.png" alt=" ">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 ">
+                        <div class="detail-box ">
+                            <div class="heading_container ">
+                                <h2>Sữa Meiji Khuyến Mãi <br>“Dinh Dưỡng Vàng, Quà Tặng Ngập Tràn”</h2>
+                            </div>
+                            <p>
+                                Từ ngày 17/10/2023 – đến khi hết quà. Hệ thống cửa hàng Sữa Bột Tốt phối hợp cùng Meiji nhập khẩu chính hãng Nhật Bản chạy chương trình quà tặng “Dinh dưỡng vàng, Quà tặng ngập tràn“. Với nhiều phần quà có giá trị cao khi khách hàng mua sữa tại hệ thống
+                                các cửa hàng Sữa Bột Tốt.
+                            </p>
+                            <div class="btn-box ">
+                                <a href="# " class="btn1 ">Mua Ngay</a>
+                                <a href="# " class="btn2 ">Xem Thêm</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container my-4">
+        <div class="row text-center">
+            <div class="col-md-3 col-6 mb-4">
+                <i class=""> <img src="/file bài làm/giftos-html/images/free.svg" alt="" height="70px"></i><br> <br>
+                <h6>2 triệu khách hàng</h6>
+                <p class="mb-0">Tin tưởng mua sắm</p>
+            </div>
+            <div class="col-md-3 col-6 mb-4">
+                <i class=""> <img src="/file bài làm/giftos-html/images/high-quality.svg" height="70px" alt=""></i> <br> <br>
+                <h6>Cam kết 100%</h6>
+                <p class="mb-0">Hàng chính hãng</p>
+            </div>
+            <div class="col-md-3 col-6 mb-4">
+                <i class=""> <img src="/file bài làm/giftos-html/images/free.svg" alt="" height="70px"></i><br> <br>
+                <h6>Giao hàng toàn quốc</h6>
+                <p class="mb-0">Miễn phí ship TP.Hồ Chí Minh</p>
+            </div>
+            <div class="col-md-3 col-6 mb-4">
+                <i class=""></i> <img src="/file bài làm/giftos-html/images/high-quality.svg" height="70px" alt=""> <br> <br>
+                <h6>Đổi trả hàng miễn phí</h6>
+                <p class="mb-0">Trong vòng 7 ngày</p>
+            </div>
+        </div>
+    </div>
+    <section class="info_section layout_padding2-top ">
+        <div class="social_container ">
+            <div class="social_box ">
+                <a href=" ">
+                    <i class="fa fa-facebook " aria-hidden="true "></i>
+                </a>
+                <a href=" ">
+                    <i class="fa fa-twitter " aria-hidden="true "></i>
+                </a>
+                <a href=" ">
+                    <i class="fa fa-instagram " aria-hidden="true "></i>
+                </a>
+                <a href=" ">
+                    <i class="fa fa-youtube " aria-hidden="true "></i>
+                </a>
+            </div>
+        </div>
+        <div class="info_container ">
+            <div class="container ">
+                <div class="row ">
+                    <div style="text-align: justify;" class="col-md-6 col-lg-3 ">
+                        <h6>
+                            Tin Tức
+                        </h6>
+                        <p>
+                            Được bổ sung vitamin và khoáng chất thiết yếu, sản phẩm này hỗ trợ hệ tiêu hóa khỏe mạnh và tăng cường sức đề kháng tự nhiên cho trẻ. Hãy chọn sữa bột XYZ để bé yêu phát triển toàn diện, an toàn và mạnh mẽ mỗi ngày!"
+                        </p>
+                    </div>
+                    <div class="col-md-6 col-lg-3 ">
+                        <div class="info_form ">
+                            <h5>
+                                Đăng Ký
+                            </h5>
+                            <form action="# ">
+                                <input type="email " placeholder="Nhập địa chỉ email ">
+                                <button>
+                  Gửi
+                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 ">
+                        <h6>
+                            Trợ Giúp
+                        </h6>
+                        <p>
+                            Với sự kết hợp của vitamin và khoáng chất, sữa bột giúp tăng sức đề kháng và cải thiện hệ tiêu hóa của trẻ.
+                        </p>
+                    </div>
+                    <div class="col-md-6 col-lg-3 ">
+                        <h6>
+                            Liên Hệ
+                        </h6>
+                        <div class="info_link-box ">
+                            <a href=" ">
+                                <i class="fa fa-map-marker " aria-hidden="true "></i>
+                                <span> 200 đường số 8, Gò Vấp, TP.HCM </span>
+                            </a>
+                            <a href=" ">
+                                <i class="fa fa-phone " aria-hidden="true "></i>
+                                <span>096 888 4419</span>
+                            </a>
+                            <a href=" ">
+                                <i class="fa fa-envelope " aria-hidden="true "></i>
+                                <span> nguyenainha04@gmail.com</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class=" footer_section ">
+            <div class="container ">
+                <p>
+                    &copy; <span id="displayYear "></span> All Rights Reserved By Nguyen Ai Nha
+
+                </p>
+            </div>
+        </footer>
+
+    </section>
+    <script src="js/jquery-3.4.1.min.js "></script>
+    <script src="js/bootstrap.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js ">
+    </script>
+    <script src="js/custom.js "></script>
+    <script>
+        // Initialize cart from local storage
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+        function addToCart(productName, price) {
+            const existingProduct = cart.find(item => item.name === productName);
+            if (existingProduct) {
+                existingProduct.quantity += 1;
+            } else {
+                cart.push({
+                    name: productName,
+                    price: price,
+                    quantity: 1
+                });
+            }
+            localStorage.setItem("cart", JSON.stringify(cart));
+            updateCartCount();
+        }
+
+        function updateCartCount() {
+            const cartCount = cart.reduce((total, item) => total + item.quantity, 0);
+            document.getElementById("cart-count").textContent = cartCount;
+        }
+
+        updateCartCount(); // Initial update on page load
+    </script>
+
+</body>
+
+</html>
